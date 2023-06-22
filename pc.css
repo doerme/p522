@@ -2,9 +2,35 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 .main_w {
     width: 1920px;
+}
+
+.two_wrap {
+    width: 100%;
+    height: 600px;
+}
+
+.two_main {
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.two_main_id {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two_main_cover {
+    width: 937px;
+    height: 600px;
 }
 
 .four_wrap{
@@ -15,6 +41,21 @@
     height: 351px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.four_main_ii{
+    width: 480px;
+    height: 351px;
+    flex: 0 0 auto;
+}
+
+.four_main_id{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner_wrap {

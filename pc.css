@@ -12,15 +12,43 @@
 
 .main_w {
     width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail_wrap{
+    width: 100%;
+    height: 1625px;
+    background: #f6f6f6;
+}
+
+.detail_main{
+    height: 1625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.advantage_wrap2 {
+    width: 100%;
+    height: 1010px;
+    background: #fff;
 }
 
 .advantage_wrap{
     width: 100%;
     height: 1080px;
+    background: #f6f6f6;
 }
 
 .advantage_main {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .show_wrap {

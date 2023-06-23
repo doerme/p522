@@ -4,7 +4,12 @@
     border: 0;
 }
 
-ul,li{
+html,body{
+    overflow-x: hidden;
+}
+
+ul,
+li {
     list-style: none;
 }
 
@@ -63,13 +68,13 @@ ul,li{
     background: #000 url('./assets/bottom_note.png') no-repeat center center;
 }
 
-.detail_wrap{
+.detail_wrap {
     width: 100%;
     height: 1625px;
     background: #f6f6f6;
 }
 
-.detail_main{
+.detail_main {
     position: relative;
     height: 1625px;
     display: flex;
@@ -78,16 +83,16 @@ ul,li{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
-.detail_main_cover{
+.detail_main_cover {
     margin-top: 40px;
     width: 1403px;
     height: 859px;
 }
 
-.detail_sub_cover{
+.detail_sub_cover {
     overflow: hidden;
     margin-top: 20px;
     width: 1403px;
@@ -105,7 +110,7 @@ ul,li{
     background: #fff;
 }
 
-.advantage_wrap{
+.advantage_wrap {
     width: 100%;
     height: 1080px;
     background: #f6f6f6;
@@ -155,7 +160,7 @@ ul,li{
     height: 415px;
 }
 
-.show_main_list_item:hover .desc{
+.show_main_list_item:hover .desc {
     background: #f9d0c2;
 }
 
@@ -173,7 +178,7 @@ ul,li{
     font-size: 54px;
     font-weight: bold;
 
-    
+
 }
 
 .show_main_title::after {
@@ -259,6 +264,7 @@ ul,li{
 
 
 .top_wrap {
+    width: 100%;
     height: 140px;
     background: #dfb5a7;
 }
@@ -296,4 +302,36 @@ ul,li{
 
 .top_nav_item_active {
     background: #c39484;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

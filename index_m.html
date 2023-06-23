@@ -19,7 +19,7 @@
 <body>
     <div class="top_wrap">
         <img class="logo" src="./assets_m/top_logo.png" />
-        <img class="type" src="./assets_m/top_type.png" />
+        <img onclick="javascript:openlist()" class="type" src="./assets_m/top_type.png" />
     </div>
     <div class="banner_wrap">
         <div class="swiper mySwiper">
@@ -112,11 +112,30 @@
         </div>
     </div>
 
+    <div class="nav_list_wrap" id="nav-list">
+        <ul>
+            <li>
+                首页
+            </li>
+            <li>
+                产品
+            </li>
+            <li>
+                加盟指南
+            </li>
+            <li>
+                关于我们
+            </li>
+        </ul>
+        <div onclick="javascript:closelist()" class="close"></div>
+    </div>
+
     <!-- Swiper JS -->
     <script src="./cdn.jsdelivr.net_npm_swiper_swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
+        var navList = document.querySelector('#nav-list')
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             autoplay: {
@@ -125,6 +144,14 @@
                 disableOnInteraction: true,
             }
         });
+
+        function openlist() {
+            navList.style.display = 'block'
+        }
+
+        function closelist() {
+            navList.style.display = 'none'
+        }
     </script>
 </body>
 

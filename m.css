@@ -13,6 +13,37 @@ li {
     list-style: none;
 }
 
+.nav_list_wrap {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav_list_wrap .close {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    width: 6vw;
+    height: 6vw;
+    background: url('./assets_m/close.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav_list_wrap li {
+    color: #FFF;
+    font-size: 3.5vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    padding-left: 5vw;
+}
+
 .show_wrap {
     width: 100%;
     height: 150vw;

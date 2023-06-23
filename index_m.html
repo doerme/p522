@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 50px;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
     <title>涵臻祺</title>
+    <script>
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = './index.html'  
+        }
+    </script>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net_npm_swiper_swiper-bundle.min.css" type="text/css">
+    <link rel="stylesheet" href="./m.css" type="text/css">
+    <link rel="stylesheet" href="./swiper_cus.css" type="text/css">
 </head>
+
 <body>
-    
+    <div class="top_wrap">
+        <img class="logo" src="./assets_m/top_logo.png" />
+        <img class="type" src="./assets_m/top_type.png" />
+    </div>
+    <div class="banner_wrap">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets_m/banner/SJ-1banner.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets_m/banner/SJ-2banner.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets_m/banner/SJ-3banner.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slogen_wrap" alt="sincere,free,fashion">
+        <img src="./assets_m/slogen.png" />
+    </div>
+
+    <div class="show_wrap">
+        <div class="show_main">
+            <div class="show_main_title">产品展示</div>
+            <div class="show_main_desc">每季新款不断，部分货品可以调换，轻库存运营</div>
+            <div class="show_main_list">
+                <div class="show_main_list_item" >
+                    <img class="cover" src="./assets/p/p1.jpg" />
+                    <div class="desc">爱情马达系列钻石女戒</div>
+                </div>
+                <div class="show_main_list_item" >
+                    <img class="cover" src="./assets/p/p2.jpg" />
+                    <div class="desc">富贵花开系列黄金手镯</div>
+                </div>
+                <div class="show_main_list_item">
+                    <img class="cover" src="./assets/p/p3.jpg" />
+                    <div class="desc">18K白托帕石奢华珠宝</div>
+                </div>
+                <div class="show_main_list_item" >
+                    <img class="cover" src="./assets/p/p4.jpg" />
+                    <div class="desc">翡翠系列祥云吊坠</div>
+                </div>
+                <div class="show_main_list_item" >
+                    <img class="cover" src="./assets/p/p5.jpg" />
+                    <div class="desc">翡翠系列祥云吊坠</div>
+                </div>
+                <div class="show_main_list_item">
+                    <img class="cover" src="./assets/p/p6.jpg" />
+                    <div class="desc">孔雀系列18K黄金彩宝akoya珍珠</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="./cdn.jsdelivr.net_npm_swiper_swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3800,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            }
+        });
+    </script>
 </body>
+
 </html>

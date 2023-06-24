@@ -46,7 +46,7 @@ li {
 
 .show_wrap {
     width: 100%;
-    height: 150vw;
+    height: 145vw;
 }
 
 .show_main {
@@ -95,7 +95,7 @@ li {
 
 .show_main_title {
     position: relative;
-    margin-top: 0.8rem;
+    margin-top: 8vw;
     font-size: 7vw;
     font-weight: bold;
 
@@ -133,8 +133,8 @@ li {
 }
 
 .banner_wrap {
-    width: 100%;
-    height: 100vw;
+    width: 100vw;
+    height: 134vw;
 }
 
 .top_wrap {

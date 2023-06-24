@@ -299,6 +299,11 @@ li {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    cursor: pointer;
+}
+
+.top_nav_item:hover {
+    opacity: 0.8;
 }
 
 .top_nav_item_active {
